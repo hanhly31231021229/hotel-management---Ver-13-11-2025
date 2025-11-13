@@ -1,4 +1,4 @@
-﻿using HotelManagement.GUI;
+using HotelManagement.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,60 +35,24 @@ namespace HotelManagement
             this.taiKhoan = taiKhoan;
             this.LoaiTK = taiKhoan.CapDoQuyen;
             InitializeComponent();
-            LoadFormForKhach();
-            //if (this.LoaiTK == 1)
-            //    LoadFormForNhanVien();
-            //else if (this.LoaiTK == 2)
-            //    LoadFormQuanLy();
-            //else if (this.LoaiTK == 4)
-            //    LoadFormForKhach();
-            //else if (this.LoaiTK == 3)
-            //    LoadFormForAdmin();
-            //customDesign();
+            //LoadFormForKhach();
+
         }
-        private void LoadFormForKhach()
-        {
-            this.ButtonSoDoPhong.Hide();
-            this.ButtonPhong.Hide();
-            this.ButtonLoaiPhong.Hide();
-            this.ButtonDanhSachDatPhong.Hide();
-            this.ButtonDanhSachHoaDon.Hide();
-            this.ButtonDanhSachDichVu.Hide();
-            this.ButtonDanhSachKhachHang.Hide();
-            this.ButtonDanhSachTienNghi.Hide();
-            this.ButtonDanhSachTaiKhoan.Hide();
-            this.ButtonDanhSachNhanVien.Hide();
-            this.ButtonThongKe.Hide();
-        }
-        //private void LoadFormForAdmin()
+        //private void LoadFormForKhach()
         //{
-        //    this.ButtonDatPhong.Hide();
-        //    this.ButtonThanhToan.Hide();
-        //    this.ButtonQLLD.Hide();
-        //    this.ButtonCSKH.Hide();
-        //    this.ButtonQLTK.Hide();           
-        //}
-        //private void LoadFormForNhanVien()
-        //{
+        //    this.ButtonSoDoPhong.Hide();
+        //    this.ButtonPhong.Hide();
+        //    this.ButtonLoaiPhong.Hide();
+        //    this.ButtonDanhSachDatPhong.Hide();
+        //    this.ButtonDanhSachHoaDon.Hide();
+        //    this.ButtonDanhSachDichVu.Hide();
+        //    this.ButtonDanhSachKhachHang.Hide();
         //    this.ButtonDanhSachTienNghi.Hide();
         //    this.ButtonDanhSachTaiKhoan.Hide();
         //    this.ButtonDanhSachNhanVien.Hide();
         //    this.ButtonThongKe.Hide();
-        //    this.ButtonDatPhong.Hide();
-        //    this.ButtonThanhToan.Hide();
-        //    this.ButtonQLLD.Hide();
-        //    this.ButtonCSKH.Hide();
-        //    this.ButtonQLTK.Hide();
         //}
-        //private void LoadFormQuanLy()
-        //{
-        //    this.ButtonDanhSachTaiKhoan.Hide();
-        //    this.ButtonDatPhong.Hide();
-        //    this.ButtonThanhToan.Hide();
-        //    this.ButtonQLLD.Hide();
-        //    this.ButtonCSKH.Hide();
-        //    this.ButtonQLTK.Hide();
-        //}
+
         //Control Box
 
         //Form Move
@@ -505,30 +469,20 @@ namespace HotelManagement
         private void SetAllButtonNormalColor()
         {
             ButtonTrangChu.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonSoDoPhong.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachDatPhong.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachHoaDon.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachKhachHang.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonPhong.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonLoaiPhong.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachDichVu.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachTienNghi.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachTaiKhoan.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonDanhSachNhanVien.BackColor = Color.FromArgb(72, 145, 153);
-            ButtonThongKe.BackColor = Color.FromArgb(72, 145, 153);
+            ButtonDatPhong.BackColor = Color.FromArgb(72, 145, 153);
+            ButtonThanhToan.BackColor = Color.FromArgb(72, 145, 153);
+            ButtonQLLD.BackColor = Color.FromArgb(72, 145, 153);
+            ButtonCSKH.BackColor = Color.FromArgb(72, 145, 153);
+            ButtonQLTK.BackColor = Color.FromArgb(72, 145, 153);
+            
 
             ButtonTrangChu.ForeColor
-                = ButtonSoDoPhong.ForeColor
-                = ButtonDanhSachDatPhong.ForeColor
-                = ButtonDanhSachHoaDon.ForeColor
-                = ButtonDanhSachKhachHang.ForeColor
-                = ButtonPhong.ForeColor
-                = ButtonLoaiPhong.ForeColor
-                = ButtonDanhSachDichVu.ForeColor
-                = ButtonDanhSachTienNghi.ForeColor
-                = ButtonDanhSachTaiKhoan.ForeColor
-                = ButtonDanhSachNhanVien.ForeColor
-                = ButtonThongKe.ForeColor = Color.Black;
+                = ButtonDatPhong.ForeColor
+                = ButtonThanhToan.ForeColor
+                = ButtonQLLD.ForeColor
+                = ButtonCSKH.ForeColor
+                = ButtonQLTK.ForeColor
+                = Color.Black;
         }
 
         //private void ButtonDanhSachDatPhong_Click(object sender, EventArgs e)
@@ -618,7 +572,7 @@ namespace HotelManagement
         //    ButtonDanhSachTienNghi.ForeColor = Color.White;
         //    //Open Child Form
         //    openChildForm(new FormDanhSachTienNghi(this,this.taiKhoan));
-            
+
         //}
 
         //private void ButtonDanhSachTaiKhoan_Click(object sender, EventArgs e)
@@ -651,40 +605,29 @@ namespace HotelManagement
         //    //Change color button on side bar
         //    SetAllButtonNormalColor();
         //    ButtonThongKe.BackColor = Color.FromArgb(233, 117, 32);
-            
+
         //    //Open Child Form
         //    openChildForm(new FormThongKe(this));
         //}
         private void DisplayTextMenu()
         {
             ButtonTrangChu.Text = "    Trang chủ";
-            ButtonSoDoPhong.Text = "    Sơ đồ phòng";
-            ButtonDanhSachDatPhong.Text = "    Danh sách đặt phòng";
-            ButtonDanhSachHoaDon.Text = "    Danh sách hóa đơn";
-            ButtonDanhSachKhachHang.Text = "    Danh sách khách hàng";
-            ButtonPhong.Text = "    Phòng";
-            ButtonLoaiPhong.Text = "    Loại phòng";
-            ButtonDanhSachDichVu.Text = "    Danh sách dịch vụ";
-            ButtonDanhSachTienNghi.Text = "    Danh sách tiện nghi";
-            ButtonDanhSachTaiKhoan.Text = "    Danh sách tài khoản";
-            ButtonDanhSachNhanVien.Text = "    Danh sách nhân viên";
-            ButtonThongKe.Text = "    Thống kê";
+            ButtonDatPhong.Text = "    Đặt phòng";
+            ButtonThanhToan.Text = "    Thanh Toán";
+            ButtonQLLD.Text = "    Quản lý lịch đặt";
+            ButtonCSKH.Text = "    Chăm sóc khách hàng";
+            ButtonQLTK.Text = "    Quản lý tài khoản";
             PanelUser.Visible = true;
         }
         private void NotDisplayTextMenu()
         {
             ButtonTrangChu.Text = "";
-            ButtonSoDoPhong.Text = "";
-            ButtonDanhSachDatPhong.Text = "";
-            ButtonDanhSachHoaDon.Text = "";
-            ButtonDanhSachKhachHang.Text = "";
-            ButtonPhong.Text = "";
-            ButtonLoaiPhong.Text = "";
-            ButtonDanhSachDichVu.Text = "";
-            ButtonDanhSachTienNghi.Text = "";
-            ButtonDanhSachTaiKhoan.Text = "";
-            ButtonDanhSachNhanVien.Text = "";
-            ButtonThongKe.Text = "";
+            ButtonDatPhong.Text = "";
+            ButtonThanhToan.Text = "";
+            ButtonQLLD.Text = "";
+            ButtonCSKH.Text = "";
+            ButtonQLTK.Text = "";
+
             PanelUser.Visible = false;
         }
         private bool isDisplayed = true;
